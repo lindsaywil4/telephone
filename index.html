@@ -128,7 +128,7 @@
     <div id="masthead">
       <span class="eyebrow">School zone &middot; Houston East End</span>
       <h1>Who crosses Telephone Road?</h1>
-      <p>Eight schools sit within &frac12; mile of the 0.5-mile stretch between Lockwood&nbsp;Dr and Lawndale&nbsp;St. Tap any item to locate it on the map.</p>
+      <p>Eight schools sit within &frac12; mile of the 0.5-mile stretch between Lockwood&nbsp;Dr and Lawndale&nbsp;St. Tap any item to locate it on the map. <a href="brief.html" style="color:var(--ink);font-weight:700">Read the meeting brief &rarr;</a></p>
     </div>
     <button id="panel-toggle" aria-expanded="true" aria-controls="list">Show / hide list</button>
     <div id="stats">
@@ -195,18 +195,18 @@ const CROSSINGS = [
 ];
 
 const CONCERNS = [
- {n:"Lockwood @ Telephone", ll:[29.735263,-95.331807], kind:"ask", label:"Ask: raised intersection",
-  why:"Community ask: treat this gateway as a raised intersection to set slower speeds for the whole segment. HFD Fire Station 18 is 500 ft away at 619 Telephone \u2014 design the ramps with HFD (fire departments generally prefer raised crosswalk profiles over humps; ITE estimates ~3 seconds of engine delay per device)."},
+ {n:"Lockwood @ Telephone", ll:[29.735263,-95.331807], kind:"ask", label:"Ask: raised intersection / crossing",
+  why:"Community ask: treat this gateway as a raised intersection or crossing to set slower speeds for the whole segment. Precedent: the city is installing raised crossings right now on the Navigation Greenway project, and a raised school crossing already works at Woodhead @ Hawthorne. HFD Fire Station 18 is 500 ft away \u2014 design ramps with HFD (departments generally prefer raised-crossing profiles; ~3 seconds of engine delay per device)."},
  {n:"Telephone @ Eddington", ll:[29.735050,-95.331210], kind:"ask", label:"Ask: pedestrian refuge island + RRFB",
-  why:"Neighbors cross here every day to reach Tlaquepaque Market / Bohemeo's (700\u2013746 Telephone) \u2014 the corridor's main gathering place, with monthly markets and events. Community ask: a marked crossing with a pedestrian refuge island so people cross one direction of traffic at a time, paired with a rectangular rapid flashing beacon (RRFB) so drivers yield."},
+  why:"Neighbors cross here daily to reach Tlaquepaque Market / Bohemeo's \u2014 the corridor's main gathering place \u2014 and the current plan shows no crossing at all. Ask: a marked crossing with a pedestrian refuge island in the existing painted median area (striping + ramps \u2014 minimal cost) plus a rectangular rapid flashing beacon (~$10\u201315k, pending a warrant check) so drivers yield."},
  {n:"Raised crossing @ Dumble (the curve)", ll:[29.734200,-95.329825], kind:"ask", label:"Ask: raised crossing",
-  why:"Community ask: a raised crossing where Telephone bends at Dumble \u2014 one block from Eastwood Academy and the poll's biggest pedestrian-signal cluster. A vertical element here does what paint can't: it physically slows drivers through the curve residents called dangerous."},
- {n:"HAWK @ Stimson \u2014 skew question", ll:[29.733410,-95.328590], kind:"question", label:"Point of question: HAWK on a skew",
-  why:"The planned HAWK sits on the grid's aggressive skew angle to Telephone. Open question for Public Works: how will the beacon and crosswalk be signalized so drivers instantly read it as a pedestrian crossing when the crossing isn't perpendicular? (Sight lines, signal-head aiming, advance markings, and lighting all need a skew-specific answer.)"},
- {n:"Claremont / Fourcade \u2014 same skew question", ll:[29.730710,-95.327120], kind:"question", label:"Point of question: skewed crossing",
-  why:"Same issue as Stimson: the Claremont/Fourcade crossing meets Telephone at a hard angle. How will markings and any signal make the pedestrian priority unambiguous to drivers approaching on the diagonal?"},
- {n:"Lawndale @ Telephone \u2014 shared left/straight lane", ll:[29.729289,-95.326397], kind:"question", label:"Point of question: lane signaling",
-  why:"The updated design uses a shared left/straight lane here, with lane signaling to be coordinated. Open questions for Public Works: how will signal phasing keep left-turners into the neighborhood from blocking the through lane, and how will lane-use signs make the shared lane obvious to drivers before they're in it \u2014 all at the same corner students use as the south gateway crossing?"}
+  why:"Community ask: a raised crossing where Telephone bends at Dumble \u2014 one block from Eastwood Academy and the poll's biggest pedestrian-signal cluster. A vertical element physically slows drivers through the curve residents called dangerous. Bonus: with the corridor's storm system being rebuilt anyway, tabling the crossing creates a natural high point and inlets can go wherever needed."},
+ {n:"HAWK @ Stimson \u2014 skew + cross-traffic", ll:[29.733410,-95.328590], kind:"question", label:"Point of question: HAWK on a skew",
+  why:"The planned HAWK sits at the curve, on the grid's skew angle. Two questions for the engineers: (1) how will the beacon and markings read unmistakably as a pedestrian crossing when the crossing isn't perpendicular? (2) HAWKs at intersections confuse side-street drivers \u2014 they see mainline traffic stopped, assume it's their gap, and pull out into the crosswalk. How is the side street signalized?"},
+ {n:"Claremont / Fourcade \u2014 same HAWK questions", ll:[29.730710,-95.327120], kind:"question", label:"Point of question: HAWK at intersection",
+  why:"Same two issues as Stimson: the crossing meets Telephone at a hard angle, and the HAWK sits at an intersection where turning drivers from multiple directions must understand a flashing red that carries no indication for the side street."},
+ {n:"Broadmoor / Baird @ Telephone\u2013Lawndale", ll:[29.729500,-95.326510], kind:"question", label:"Flag: offset intersection operation",
+  why:"The redesign squares Lawndale into a T and converts Broadmoor to stop control \u2014 no longer a signalized leg. Left turns from Broadmoor onto Telephone must find a gap while Telephone's left-turn queue for Lawndale blocks the path, and Broadmoor's storage is one or two cars. Not proposing a solution \u2014 flagging that as drawn this still looks like a conflict point, and asking the engineers to take a second look before it's locked in."}
 ];
 
 /* Shade tree route: Telephone spine + street-following spurs (Dumble & Lawndale) */
